@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title> 코딩리스트 :  - 사용자</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.css" />
+    <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css" /> -->
+    <style type="text/css">
+        body{font:normal 13px/1.5 'Noto Sans KR',Malgun Gothic,'맑은고딕', sans-serif, Arial, Verdana;color:#666;margin:0;}
+	h1, h2, h3, h4, h5, h6{color:#000;}
+	fieldset,ul, ol, dl, dt, dd, p, button, figure{margin:0;padding:0;}
+	legend, caption{width:0;height:0;visibility:hidden;font-size:0;line-height:0;}
+	em, a , input, textarea, keygen, select, button, isindex, i{font-style:normal;text-decoration:none;color:#666;}
+	fieldset, button{background:none;border:0px;}
+	ul:after,ol:after,,dl:after{content:'';display:block;clear:both;}
+	li{list-style:none;}
+	img{vertical-align:middle;}
+	table{width:100%;border-spacing:0px;border-collapse:collapse;table-layout:fixed;}
+	th, td{word-break:break-all;}
+	iframe{width:100%;vertical-align:middle;}
+	hr{border:0 none;height:1px;background:#e3e3e3;}
+	body {overflow:auto;}
+	
+	.wrap{padding:10px;max-width:1200px;margin:0 auto;}
+	.table{border-top:1px solid #666;border-bottom:2px solid #999;margin-bottom:20px;}
+	.table table{width:100%;}
+	.table table thead th{padding:5px;background:#e4e4e4;border-left:1px solid #c3c3c3;border-bottom:1px solid #666;color:#333;}
+	.table table tbody td{padding:5px;border-top:1px solid #c3c3c3;border-left:1px solid #c3c3c3;}
+	.table table tbody th{text-align:center;background:#f9f9f9;color:#515151;border-top:1px solid #c3c3c3;}
+	.table table tbody tr:first-child th, .table table tbody tr:first-child td{border-top:0;}
+	.table table th:first-child, .table table tbody td:first-child{border-left:0;}
+	.table table tbody tr:hover th, 
+	.table table tbody tr:hover td{background:#f5f5f5 !important;}
+	.table table tbody tr:hover td a{color:red;}
+	.table a{text-decoration:underline;}
+	.table .sky th, .table .sky td{background:#d2f6f6;color:#000;}
+	.table .yellow td{background:#ffeeca;color:#000;}
+	.table .yellow td:first-child{background:none;}
+	.table .line th, .table .line td{border-top-color:#666;}
+	
+	.text_box{padding:10px;margin-bottom:10px;color:#666;border:2px solid #ccc;line-height:1.5;}
+	.text_box strong{display:inline-block;}
+	.text_box strong:first-child{padding-left:0;}
+	.text_box span{display:inline-block;width:10px;height:10px;vertical-align:center;}
+	
+	.red{color:red;}
+	.blue{color:blue;}
+
+	.midline{text-decoration:line-through;color: #aaa;}
+    </style>
+
+    <!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+<![endif]-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function() {
+            var size = 0;
+            $('.line').each(function(idx) {
+                $(this).children('th').attr('rowspan',
+                    $(this).nextAll('.line').index() < 0 ? size = $(this).nextAll().length + 1 : $(this).nextAll('.line').index() - size
+                );
+                size = $(this).nextAll('.line').index();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <section class="wrap">
+        <h1>Kona Health Admin</h1>
+        <div class="table">
+            <table>
+                <colgroup>
+                    <col width="15%">
+                    <col width="15%">
+                    <col width="15%">
+                    <col width="25%">
+                    <col width="*">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>1depth</th>
+                        <th>2depth</th>
+                        <th>3depth</th>
+                        <th>File</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- ★관리자 -->
+
+					<tr class="line">
+						<th>외부 참조 url</th>
+                        <td colspan="4">
+							검색 자동완성 : <br />
+							url : <a href="http://easyautocomplete.com/examples" target="_blank">EasyAutoComplete</a> <br /><br />
+							검색 combobox : <br />
+							url : <a href="http://jqueryui.com/autocomplete/#combobox" target="_blank">Autocomplete</a> <br /><br />
+							flag selectbox : <br />
+							url : <a href="https://semantic-ui.com/collections/form.html" target="_blank">Semantic UI</a> <br /><br />
+						</td>
+                    </tr>
+
+					<tr class="line">
+                        <th>Intro</th>
+                        <td>로그인 화면</td>
+                        <td></td>
+                        <td><a target="_blank" href="html/loginIntro.html">loginIntro.html</a></td>
+						<td>
+                            <!--
+							관리자 페이지와 같이 사용
+							<div class="red">
+								2019-01-29 수정 <br />
+							</div>
+                            -->
+						</td>
+                    </tr>
+
+					<tr class="line">
+                        <th>공통</th>
+                        <td>frame</td>
+                        <td></td>
+                        <td><a target="_blank" href="html/frame.html">frame.html</a></td>
+                        <td></td>
+                    </tr>
+					<tr class="line">
+                        <th>게시판 관리</th>
+                        <td rowspan="3">공통</td>
+                        <td>list</td>
+                        <td><a target="_blank" href="html/bbs_list.html">bbs_list.html</a></td>
+                        <td>
+							<div class="red"></div>
+						</td>
+                    </tr>
+					<tr>
+                        <td>글보기</td>
+                        <td><a target="_blank" href="html/bbs_view.html">bbs_view.html</a></td>
+                        <td>
+							<div class="red"></div>
+						</td>
+                    </tr>
+					<tr>
+                        <td>글쓰기</td>
+                        <td><a target="_blank" href="html/bbs_write.html">bbs_write.html</a></td>
+                        <td>
+							<div class="red"></div>
+						</td>
+                    </tr>
+                    <tr>
+                        <td>자유게시판</td>
+                        <td>공지사항 글보기</td>
+                        <td><a target="_blank" href="html/notice_view.html">notice_view.html</a></td>
+                        <td>
+							<div class="red"></div>
+						</td>
+                    </tr>
+					<tr>
+                        <td rowspan="3">에코게시판</td>
+                        <td></td>
+                        <td><a target="_blank" href="html/eco_list.html">eco_list.html</a></td>
+                        <td>
+							<div class="red"></div>
+						</td>
+                    </tr>
+					<tr>
+                        <td>글보기</td>
+                        <td><a target="_blank" href="html/eco_view.html">eco_view.html</a></td>
+                        <td>
+							<div class="red"></div>
+						</td>
+                    </tr>
+					<tr>
+                        <td>글쓰기</td>
+                        <td><a target="_blank" href="html/eco_write.html">eco_write.html</a></td>
+                        <td>
+							<div class="red"></div>
+						</td>
+                    </tr>
+					<tr class="line">
+                        <th>금지어 관리</th>
+                        <td></td>
+                        <td></td>
+                        <td><a target="_blank" href="html/.html">.html</a></td>
+                        <td>
+							<div class="red"></div>
+						</td>
+                    </tr>
+					<tr class="line">
+                        <th>관리자 로그</th>
+                        <td></td>
+                        <td></td>
+                        <td><a target="_blank" href="html/admin_log.html">admin_log.html</a></td>
+                        <td>
+							<div class="red"></div>
+						</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <!-- //contents -->
+
+</body>
+</html>

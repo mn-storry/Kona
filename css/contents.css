@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+
+/* ==============================
+ * Login
+ * ============================== */
+
+.loginWrap {position:absolute; top:0; right:0; bottom:0; left:0; width:100%; min-width:1400px; height:100%; text-align:center;}
+.loginWrap:before {content:''; display:inline-block; height:100%; vertical-align:middle;}
+.loginWrap > form {display:inline-block; vertical-align:middle; text-align:left; background:#fff;}
+.loginLayer {display:inline-block; vertical-align:middle; text-align:left; background:#fff;}
+.loginLayer > .inner {padding:10px;}
+.loginLayer > h1 {text-align:center;}
+.loginLayer > h1 img {width:280px;}
+.loginLayer > h1 + .inner {margin-top:10px; padding:20px 20px; min-height:280px;}
+
+.loginLayer .loginCont {margin-top:10px; padding:20px 20px; border:1px solid #d9d9d9; font-size:0;}
+.loginLayer .loginCont > .inner, .loginLayer .loginCont > form .inner {display:inline-block; width:518px; min-height:260px; vertical-align:top;text-align:center;}
+.loginLayer .loginCont > .inner + .inner, .loginLayer .loginCont > form .inner + .inner {padding-top:66px; padding-left:20px; margin-left:20px; border-left:1px solid #d9d9d9; -webkit-box-sizing:content-box; box-sizing:content-box;}
+
+
+.loginBox .inputBox {overflow:hidden; width:100%; margin-top:30px; padding:0 55px;}
+.loginBox .inputBox label, .loginBox .inputBox input {float:left; margin-bottom:20px;}
+.loginBox .inputBox label {clear:both;width:100px;font-size:15px;line-height:30px;text-align:left;}
+.loginBox .inputBox input {width:300px;}
+
+.loginBox .btns {margin-top:15px;}
+.loginBox .btns button {height:50px;padding:0 30px;font-size:16px;}
+
+
+
+/* ==============================
+ * common
+ * ============================== */
+
+.wrapper {position:relative; width:100%; height:100%; min-height:100%;}
+.wrapper > form {height:100%;}
+#container {position:relative; min-height:100%; padding-top:60px; background:#f5f6fa;}
+#container > .inner {height:100%;}
+
+.content {-webkit-box-flex:1;-ms-flex:1;flex:1; position:relative; height:auto; min-height:100%; padding:0 20px 20px 20px;}
+.content {padding:30px 20px 20px 305px;}
+/*
+.content.editBtns {padding:0 20px 82px 305px;}
+.content:before {content:''; position:absolute; top:0; left:-1px; height:100%;}
+.content.editBtns .editBtns {position:fixed; right:0; bottom:0; z-index:2; padding:17px 20px; background:#fff; width:100%; text-align:right; -webkit-box-shadow: 0px -4px 20px 0px rgba(31, 54, 95, 0.15); box-shadow: 0px -4px 20px 0px rgba(31, 54, 95, 0.15);}
+*/
+
+
+/* Title */
+h2.tit, .h2_tit {position:relative; padding-bottom:20px; font-weight:700; font-size:26px; color:#181818; line-height:32px;}
+h2.tit + h3.tit {margin-top:20px;}
+
+h3.tit, .h3_tit {margin:20px 0 10px;font-size:16px;font-weight:bold;color:#181818;}
+.tblDefault + .h3_tit {margin:80px 0 20px;}
+
+
+
+/* Layout */
+.layout {position:relative; padding:40px 49px 50px; background-color:#fff; border-radius:10px;}
+
+
+
+/* layer Popup
+.layerPopup {position:relative; display:inline-block; width:500px; max-height:700px; overflow:auto; padding:30px; font-size:0; border-radius:10px; background:#fff; -webkit-box-shadow: 3px 4px 20px 0px rgba(35, 75, 149, 0.7); box-shadow: 3px 4px 20px 0px rgba(35, 75, 149, 0.7);}
+.layerPopup.wide {width:700px;}
+.layerPopup > .inner {}
+.layerPopup > .inner .popupTitle {padding:2px 0 19px 0; font-weight:600; font-size:20px; color:#0754d2; border-bottom:2px solid #085ec1;}
+.layerPopup > .inner .popupTitle + h3.tit {margin-top:15px;}
+.layerPopup .layerContent {padding:15px 0;}
+.layerPopup .layerBtns {padding:10px 0 0 0; text-align:right;}
+.layerPopup .layerBtns .btn + .btn {margin-left:7px;}
+.layerPopup > .btn.close {position:absolute; top:15px; right:11px;}
+
+h3.tit + .detailViewer {margin-top:10px;}
+.detailViewer {height:200px; padding:10px; font-size:13px; border:1px solid #d9d9d9; overflow:auto;}
+
+
+/* etc
+.alertMessage {position:relative; padding-left:25px; font-size:12px; color:#ff0000;}
+.alertMessage + .alertMessage {margin-top:5px;}
+.alertMessage:before {content:''; position:absolute; top:0px; left:0; width:18px; height:16px; background:url(../images/common/sprite_common.png) no-repeat -126px -100px;}
+
+.lineBasic {position:relative; height:40px;}
+.lineBasic:after {content:''; position:absolute; top:19px; left:0; width:100%; border-bottom:1px solid #d9d9d9;}
+
+.fileList {}
+.fileList > li {position:relative; display:none; font-size:0; overflow:hidden;}
+.fileList > li + li {margin-top:15px;}
+.fileList > li.on {display:block;}
+.fileList > li input[type="file"] {position:absolute; top:-25px; right:-100px; font-size:13px;}
+.fileList > li:first-child .btn.minus {display:none;}
+.fileList > li .pathDp {display:inline-block; width:200px; height:30px; padding:0 10px; border:1px solid blue; font-size:13px; line-height:28px; vertical-align:top;}
+.fileList > li .pathDp {overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.fileList > li .pathDp + .btns {margin-left:7px;}
+.fileList > li .btns {display:inline-block; font-size:0; vertical-align:top;}
+.fileList > li .btns .btn {margin-left:7px;}
+.fileList > li .inp {padding:0 10px 0 10px; -webkit-transition:0s; transition:0s;}
+.fileList > li.add .inp {padding:0 10px 0 30px;}
+.fileList > li.add .inp {background:url(../images/common/icon/icon_down.jpg) no-repeat left 5px center; background-size:20px 20px; text-decoration:underline;}
+
+
+/* txtBox
+.txtBox {max-height:200px; font-size:14px; overflow:auto;}
+.txtBox > .inner {}
+.txtBox + .inpItem {margin-top:15px;}
+.txtBox + .agreeChk {margin-top:15px;}
+.txtBox + h3.tit {margin-top:20px;}
+
+.iTxtCont {}
+.iTxtCont > .txt {font-size:13px;}
+.iTxtCont > .txt + .btnBox {margin-top:15px; text-align:right;}
+.iTxtCont + h3.tit {margin-top:20px;}
+
+
+/* agreeChk 
+.agreeChk {position:relative;}
+.agreeChk:after { content:''; display:block; clear:both;}
+.agreeChk > .txt {display:inline-block; padding:4px 0 0 0; font-size:14px;}
+.agreeChk > .checkbox {float:right;}
