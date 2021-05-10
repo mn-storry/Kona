@@ -10,19 +10,23 @@
 .loginWrap > form {display:inline-block; vertical-align:middle; text-align:left; background:#fff;}
 .loginLayer {display:inline-block; vertical-align:middle; text-align:left; background:#fff;}
 .loginLayer > .inner {padding:10px;}
-.loginLayer > h1 {text-align:center;}
-.loginLayer > h1 img {width:280px;}
-.loginLayer > h1 + .inner {margin-top:10px; padding:20px 20px; min-height:280px;}
+.loginLayer h1 {text-align:center;}
+.loginLayer h1 img {width:280px;}
+.loginLayer h1 + .inner {margin-top:10px; padding:20px 20px; min-height:280px;}
 
-.loginLayer .loginCont {margin-top:10px; padding:20px 20px; border:1px solid #d9d9d9; font-size:0;}
-.loginLayer .loginCont > .inner, .loginLayer .loginCont > form .inner {display:inline-block; width:518px; min-height:260px; vertical-align:top;text-align:center;}
+.loginLayer .loginCont {margin-top:10px; padding:20px 20px; border:1px solid #d9d9d9; font-size:0;border-radius:10px;overflow:hidden;}
+.loginLayer .loginCont > .inner, .loginLayer .loginCont > form .inner {display:inline-block; width:518px; min-height:230px; vertical-align:top;text-align:center;}
 .loginLayer .loginCont > .inner + .inner, .loginLayer .loginCont > form .inner + .inner {padding-top:66px; padding-left:20px; margin-left:20px; border-left:1px solid #d9d9d9; -webkit-box-sizing:content-box; box-sizing:content-box;}
 
 
-.loginBox .inputBox {overflow:hidden; width:100%; margin-top:30px; padding:0 55px;}
+.loginBox .inputBox {overflow:hidden;position:relative; display:inline-block; width:100%; margin-top:30px; padding:0 55px;}
 .loginBox .inputBox label, .loginBox .inputBox input {float:left; margin-bottom:20px;}
-.loginBox .inputBox label {clear:both;width:100px;font-size:15px;line-height:30px;text-align:left;}
-.loginBox .inputBox input {width:300px;}
+.loginBox .inputBox label {clear:both;width:100px;font-size:15px;line-height:35px;text-align:left;}
+.loginBox .inputBox input {width:300px; background-color:#eff5f8;}
+
+.loginBox .checkBox {padding:0 55px;text-align:right;}
+.loginBox .checkBox input[type=checkbox] {margin-left:0;}
+.loginBox .checkBox input[type=checkbox]:checked + label {font-weight:normal;line-height:35px;}
 
 .loginBox .btns {margin-top:15px;}
 .loginBox .btns button {height:50px;padding:0 30px;font-size:16px;}
@@ -118,3 +122,20 @@ h3.tit + .detailViewer {margin-top:10px;}
 .agreeChk:after { content:''; display:block; clear:both;}
 .agreeChk > .txt {display:inline-block; padding:4px 0 0 0; font-size:14px;}
 .agreeChk > .checkbox {float:right;}
+
+
+
+/* 금지어관리 */
+.tblDefault + .forbidden_list {margin-top:30px;}
+
+.forbidden_list {border-top:1px solid #dbdbdb;border-bottom:1px solid #dbdbdb;}
+.forbidden_list dt, 
+.forbidden_list dd {padding:20px;}
+.forbidden_list dt {background-color:#f7fcff;font-size:15px;font-weight:bold;border-bottom:1px solid #dbdbdb;}
+
+.forbidden_list dd ul {display:flex;justify-content:left;flex-wrap:wrap;margin:-20px 0 0 -20px;}
+.forbidden_list dd li {min-width:80px;margin:20px 0 0 15px;}
+.forbidden_list dd li a {position:relative;display:block;padding:5px 25px 5px 10px;line-height:25px;text-decoration:none;border:1px solid #dbdbdb;border-radius:10px;overflow:hidden;}
+.forbidden_list dd li a:after {content:'';position:absolute;right:8px;top:10px;width:10px;height:10px;background:url(../images/common/sprite_common.png) no-repeat 0 -20px;-ms-transform:rotate(137deg);-moz-transform:rotate(137deg);-webkit-transform:rotate(137deg);transform:rotate(137deg);}
+.forbidden_list dd li a:hover {border-color:#0b61ca;color:#0b61ca;}
+.forbidden_list dd li a:hover:after {background-position:-20px -20px; -ms-transform:rotate(0);-moz-transform:rotate(0);-webkit-transform:rotate(0);transform:rotate(0);}

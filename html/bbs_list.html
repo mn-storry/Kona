@@ -28,7 +28,7 @@
 	<div class="wrapper">
 		<!-- 헤더영역 -->
 		<header id="headerWrap">
-			<h1><img src="../static/images/common/logo.png" alt="KONA Health" /></h1>
+			<h1><img src="../images/common/logo.svg" alt="KONA Health" /></h1>
 			<div class="utilMenu">
 				<a href="">Login</a>
 				<!-- <a href="">Logout</a> -->
@@ -42,7 +42,13 @@
 					<div class="gnb">
 						<ul class="gnbList">
 							<!-- on 클래스 추가-->
-							<li class="on"><a href="#">게시글관리</a></li>
+							<li class="on">
+								<a href="">게시글관리</a>
+								<ul class="sub_gnb">
+									<li><a href="#">- 자유게시판</a></li>
+									<li><a href="#">- 에코게시판</a></li>
+								</ul>
+							</li>
 							<li><a href="#">금지어관리</a></li>
 							<li><a href="#">관리자 로그</a></li>
 						</ul>
@@ -52,13 +58,6 @@
                     <div class="layout">
 
                         <h2 class="tit">자유게시판</h2>
-
-						<div class="bbs_selectBox">
-							<select id="">
-								<option value="자유게시판">자유게시판</option>
-								<option value="에코게시판">에코게시판</option>
-							</select>
-						</div>
 
                         <!-- 필터 영역 -->
                         <div class="srchFilter_box">
@@ -71,21 +70,22 @@
 								<div class="filterArea">
 									<div class="filterBox">
 										<dl>
-											<dt><a href="#none" class="btn_filter">필터</a></dt>
+											<dt>필터</dt>
 											<dd>
-												<ul>
-													<li><a href="#none">게시</a></li>
-													<li><a href="#none">히든</a></li>
-													<li><a href="#none">댓글</a></li>
-												</ul>
+												<span class="checkBox">
+													<input type="checkbox" name="" id="">
+													<label for="">게시</label>
+												</span>
+												<span class="checkBox">
+													<input type="checkbox" name="" id="">
+													<label for="">히든</label>
+												</span>
+												<span class="checkBox">
+													<input type="checkbox" name="" id="">
+													<label for="">댓글</label>
+												</span>
 											</dd>
 										</dl>
-									</div>
-									
-									<div class="filterSort">
-										<span><a href="">게시</a></span>
-										<span><a href="">히든</a></span>
-										<span><a href="">댓글</a></span>
 									</div>
 								</div>
 							</form>
