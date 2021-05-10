@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<meta name ="x-apple-disable-message-reformatting">
+	<title>Kona Admin</title>
+	<link rel="shortcut icon" href="../images/common/favicon.ico">
+	<link href="../css/reset.css" rel="stylesheet" />
+	<link href="../css/common.css" rel="stylesheet" />
+	<link href="../css/contents.css" rel="stylesheet" />
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/ui.js"></script>
+	<!--[if lt IE 9]>
+    <script type="text/javascript">
+        document.createElement("header"); 
+        document.createElement("nav"); 
+        document.createElement("section"); 
+        document.createElement("article"); 
+        document.createElement("footer");
+    </script>
+<![endif]-->
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- 헤더영역 -->
+		<header id="headerWrap">
+			<h1><img src="../images/common/logo.svg" alt="KONA Health" /></h1>
+			<div class="utilMenu">
+				<a href="">Login</a>
+				<!-- <a href="">Logout</a> -->
+			</div>
+		</header>
+		<!-- //헤더영역 -->
+
+		<section id="container">
+			<div class="inner">
+				<nav>
+					<div class="gnb">
+						<ul class="gnbList">
+							<!-- on 클래스 추가-->
+							<li class="on">
+								<a href="">게시글관리</a>
+								<ul class="sub_gnb">
+									<li><a href="#">- 자유게시판</a></li>
+									<li><a href="#">- 에코게시판</a></li>
+								</ul>
+							</li>
+							<li><a href="#">금지어관리</a></li>
+							<li><a href="#">관리자 로그</a></li>
+						</ul>
+					</div>
+				</nav>
+				<div class="content">
+                    <div class="layout">
+
+                        <h2 class="tit">에코게시판</h2>
+                        
+						<div class="controlBox">
+							<div class="btnBox tar">
+								<button type="button" class="btn dGray" id="">목록</button>
+							</div>
+						</div>
+						
+                        <table class="tblDefault bbs">
+                            <colgroup>
+                                <col style="width:16%;" />
+                                <col style="width:18%;" />
+                                <col style="width:15%;" />
+                                <col style="width:18%;" />
+                                <col style="width:15%;" />
+                                <col style="width:18%;" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>작성자이름</th>
+                                    <td>김민규</td>
+                                    <th>전화번호</th>
+                                    <td>010-5522-2211</td>
+                                    <th>등록일</th>
+                                    <td>2019.07.01 15:22:15</td>
+                                </tr>
+                                <tr>
+                                    <th>제목</th>
+                                    <td colspan="5">건강보험 정보는 어떻게 가져옵니까?</td>
+                                </tr>
+                                <tr>
+                                    <th>내용</th>
+                                    <td colspan="5">
+                                        건강 검진을 받았던 정보를 어떻게 가져오는건가요?<br />
+                                        믿을만한 건가요??<br />
+                                        내 정보는 어떻게 관리되나요?
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+						
+                        <table class="tblDefault bbs">
+                            <colgroup>
+                                <col style="width:16%;" />
+                                <col style="width:85%;" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>매불쇼 선정</th>
+                                    <td>
+                                        <div class="radioBox">
+                                            <input type="radio" name="" id="" >
+                                            <label for="">선정</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Push 전송</th>
+                                    <td>
+                                        <div class="pushBox">
+                                            <textarea name="" id="" cols="30" ></textarea>
+                                            <button type="button" class="btn bd_dGray">Push 전송</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Push 전송 이력</th>
+                                    <td>
+                                        <ul class="push_history">
+                                            <li>2021.05.05 14:11:25 / push 메시지 전송 / 귀하의 질문이 방송 내용으로 선정되었습니다… 본방 사수!!!</li>
+                                            <li>2021.05.05 14:11:25 / push  메시지 전송 / 귀하의 질문이 방송 내용으로 선정되었습니다… 본방 사수!!!</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+						
+                        <table class="tblDefault bbs">
+                            <colgroup>
+                                <col style="width:16%;" />
+                                <col style="width:85%;" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>닥터 QA 등록</th>
+                                    <td>
+                                        <div class="radioBox">
+                                            <input type="radio" name="" id="" >
+                                            <label for="">선정</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Push 전송</th>
+                                    <td>
+                                        <div class="pushBox">
+                                            <textarea name="" id="" cols="30" ></textarea>
+                                            <button type="button" class="btn bd_dGray">Push 전송</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Push 전송 이력</th>
+                                    <td>
+                                        <ul class="push_history">
+                                            <li>2021.05.05 14:11:25 / push 메시지 전송 / 귀하의 질문이 방송 내용으로 선정되었습니다… 본방 사수!!!</li>
+                                            <li>2021.05.05 14:11:25 / push  메시지 전송 / 귀하의 질문이 방송 내용으로 선정되었습니다… 본방 사수!!!</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+				</div>
+			</div>
+		</section>
+	</div>
+</body>
+
+</html>

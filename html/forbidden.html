@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<meta name ="x-apple-disable-message-reformatting">
+	<title>Kona Admin</title>
+	<link rel="shortcut icon" href="../images/common/favicon.ico">
+	<link href="../css/reset.css" rel="stylesheet" />
+	<link href="../css/common.css" rel="stylesheet" />
+	<link href="../css/contents.css" rel="stylesheet" />
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/ui.js"></script>
+	<!--[if lt IE 9]>
+    <script type="text/javascript">
+        document.createElement("header"); 
+        document.createElement("nav"); 
+        document.createElement("section"); 
+        document.createElement("article"); 
+        document.createElement("footer");
+    </script>
+<![endif]-->
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- 헤더영역 -->
+		<header id="headerWrap">
+			<h1><img src="../images/common/logo.svg" alt="KONA Health" /></h1>
+			<div class="utilMenu">
+				<a href="">Login</a>
+				<!-- <a href="">Logout</a> -->
+			</div>
+		</header>
+		<!-- //헤더영역 -->
+
+		<section id="container">
+			<div class="inner">
+				<nav>
+					<div class="gnb">
+						<ul class="gnbList">
+							<!-- on 클래스 추가-->
+							<li class="on">
+								<a href="">게시글관리</a>
+								<ul class="sub_gnb">
+									<li><a href="#">- 자유게시판</a></li>
+									<li><a href="#">- 에코게시판</a></li>
+								</ul>
+							</li>
+							<li class="on"><a href="#">금지어관리</a></li>
+							<li><a href="#">관리자 로그</a></li>
+						</ul>
+					</div>
+				</nav>
+				<div class="content">
+                    <div class="layout">
+
+                        <h2 class="tit">금지어관리</h2>
+
+                        <table class="tblDefault">
+                            <colgroup>
+                                <col style="width:15%;">
+                                <col style="width:*;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>금지어 등록</th>
+                                    <td>
+                                        <div class="inputBox">
+                                            <input type="text" name="" id="" style="width:30%;">
+                                            <button type="button" class="btn bd-dGray">등록</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+						<dl class="forbidden_list">
+                            <dt>등록된 금지어</dt>
+                            <dd>
+                                <ul>
+                                    <li><a href="#none">욕</a></li>
+                                    <li><a href="#none">욕하기욕하기욕하기욕하기</a></li>
+                                    <li><a href="#none">욕</a></li>
+                                    <li><a href="#none">욕하욕하기욕하기기</a></li>
+                                    <li><a href="#none">욕</a></li>
+                                    <li><a href="#none">욕하기</a></li>
+                                    <li><a href="#none">욕 욕하기 욕하기</a></li>
+                                    <li><a href="#none">욕하기</a></li>
+                                    <li><a href="#none">욕</a></li>
+                                    <li><a href="#none">욕하기</a></li>
+                                    <li><a href="#none">욕욕욕</a></li>
+                                    <li><a href="#none">욕하기</a></li>
+                                    <li><a href="#none">욕하기</a></li>
+                                    <li><a href="#none">욕욕욕욕욕욕 욕욕욕욕</a></li>
+                                    <li><a href="#none">욕하기</a></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+				</div>
+			</div>
+		</section>
+	</div>
+</body>
+
+</html>
